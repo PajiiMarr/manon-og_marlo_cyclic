@@ -75,13 +75,12 @@ void checkCyclicBFS(const vector<vector<int>>& adjMatrix) {
 }
 
 int main() {
-    // Hardcoded adjacency matrix for directed graph
     vector<vector<int>> adjMatrix = {
         {0, 1, 0, 0, 0},
         {0, 0, 1, 0, 0},
         {0, 0, 0, 1, 0},
         {0, 0, 0, 0, 1},
-        {1, 0, 0, 0, 0}  // Creates a cycle 0→1→2→3→4→0
+        {1, 0, 0, 0, 0} 
     };
 
     checkCyclicBFS(adjMatrix);
